@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
+<script>
+    function doClear()
+    {
+        document.getElementById("main").value="";
+
+    }
+    function view(num)
+    {
+        document.getElementById("main").value+=num;
+    }
+    function doPlus()
+    {
+        var sum=document.getElementById("main").value;
+        var sum1=eval(sum);
+        document.getElementById("main").value=sum1;
+    }
+    function doRemove()
+    {
+        var exp=document.getElementById("main").value;
+        exp=exp.substr(0,exp.length-1);
+        document.getElementById("main").value=exp;
+    
+    }
+    function doClear()
+        {
+            document.getElementById("main").value="";
+
+        }
+</script>
 <body style="padding-top: 80px; background-color: cadetblue;"  >
     <center>
         <table rules="all"   style="background-color: rgb(60, 56, 56); border: 2px solid black;  height: 450px; width: 400px; ;  ">
